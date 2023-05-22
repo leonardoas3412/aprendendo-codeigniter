@@ -31,6 +31,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->add('om/(:any)','Olamundo::index/$1');
+$routes->add('/produtos','Produtos::index');
+$routes->add('/produtos/detalhes/(:any)','Produtos::detalhes/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
